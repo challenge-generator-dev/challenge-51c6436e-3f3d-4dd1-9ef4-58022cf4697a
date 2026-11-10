@@ -1,0 +1,74 @@
+# Terraform local state and logs
+*.tfstate
+*.tfstate.*
+*.log
+*.tfplan
+*.tfvars.backup
+
+# Terraform directories
+.terraform/
+.terraform.lock.hcl
+
+# Provider plugins cache
+.terraform.d/
+
+# Sensitive variable files - nunca versionar
+*..auto.tfvars
+*.auto.tfvars.json
+
+# Environment-specific overrides (usar environments/ en su lugar)
+# Descomentar solo si es necesario para desarrollo local temporal
+# dev.tfvars
+# prod.tfvars
+
+# Backup files
+*.backup
+*.bak
+*~
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Secrets and credentials - NUNCA versionar
+*.pem
+*.key
+*.crt
+credentials.json
+aws_credentials*
+*secret*
+*password*
+*.p12
+
+# Build artifacts
+dist/
+build/
+
+# Temporary files
+tmp/
+temp/
+.cache/
+
+# CI/CD pipeline artifacts
+*.zip
+*.tar.gz
+
+# Documentation generated files
+site/
+
+# Python virtual environments (si aplica)
+venv/
+env/
+.venv/
+
+# Node modules (si aplica)
+node_modules/
+
+# Misc
+*.tmp
+.env
+.env.local
